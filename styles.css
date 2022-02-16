@@ -7,4 +7,40 @@ grey - #95a5a6;
 red - #ee5253
 
 */
-
+nav{
+  background-color: #0fb9b1;
+  height: 50px;
+  display:flex;
+  align-items: center;
+}
+.text-1{
+  font-size: 20px;
+}
+.wrapper{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height:550px;
+  background-image: url(./assets/burger-friends.jpg);
+}
+.box{
+  width: 500px;
+  height: 300px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color:rgba(225, 225, 225, .9);
+}
+ul{
+  list-style-type: none;
+}
+button{
+  width: 130px;
+  height: 40px;
+  background-color: #0fb9b1;
+}
+.svg-img{
+  width:200;
+  height:200;
+}
