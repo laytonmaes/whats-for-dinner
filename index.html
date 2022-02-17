@@ -4,23 +4,36 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   </head>
   <body>
-    <nav>
+    <header>
       <hi class="text-1">What's for Dinner?</h1>
-    </nav>
+    </header>
     <div class="wrapper">
       <section class="box">
-        <h2>What are you looking for?</h2>
-        <ul>
-          <li><input type="checkbox">Side</li>
-          <li><input type="checkbox">Main Dish</li>
-          <li><input type="checkbox">Dessert</li>
-        </ul>
-        <button>LET'S COOK</button>
+        <div class="box-formatting-1">
+          <h2>What are you looking for?</h2>
+          <ul>
+            <li><input type="checkbox">Side</li>
+            <li><input type="checkbox">Main Dish</li>
+            <li><input type="checkbox">Dessert</li>
+          </ul>
+          <button id="lets-cook">LET'S COOK!</button>
+        </div>
       </section>
-      <div class="box">
+      <section class="box">
         <img src="./assets/cookpot.svg" alt="Cookpot SVG" class="svg-img">
-      </div>
+      <section>
     </div>
+    <footer>
+      <form>
+        <label for="recipe-type">Recipe Type: </label>
+        <input type="text" name="recipe-type">
+        <label for="recipe-name">Recipe Name: </label>
+        <input type="text" name="recipe-name">
+        <button id="add-new">ADD NEW</button>
+      </form>
+    </footer>
   </body>
   <script type="text/javascript" src="main.js"></script>
+  <script type="text/javascript" src="data.js"></script>
+    <script type="text/javascript" src="class.js"></script>
 </html>
