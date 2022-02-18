@@ -4,6 +4,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   </head>
   <body>
+    <div class = "wrapper-2">
     <header>
       <hi class="text-1">What's for Dinner?</h1>
     </header>
@@ -12,26 +13,16 @@
         <div class="box-formatting-1">
           <h2>What are you looking for?</h2>
           <ul>
-            <li><input type="checkbox">Side</li>
-            <li><input type="checkbox">Main Dish</li>
-            <li><input type="checkbox">Dessert</li>
+            <li><input type="checkbox" id="dish1">Side</li>
+            <li><input type="checkbox" id="dish2">Main Dish</li>
+            <li><input type="checkbox" id="dish3">Dessert</li>
           </ul>
           <button id="lets-cook">LET'S COOK!</button>
         </div>
       </section>
-      <section class="box">
+      <section class="box meal-display">
         <img src="./assets/cookpot.svg" alt="Cookpot SVG" class="svg-img">
-      <section>
-    </div>
-    <footer>
-      <form>
-        <label for="recipe-type">Recipe Type: </label>
-        <input type="text" name="recipe-type">
-        <label for="recipe-name">Recipe Name: </label>
-        <input type="text" name="recipe-name">
-        <button id="add-new">ADD NEW</button>
-      </form>
-    </footer>
+      </section>
   </body>
   <script type="text/javascript" src="main.js"></script>
   <script type="text/javascript" src="data.js"></script>
