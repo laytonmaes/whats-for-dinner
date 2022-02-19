@@ -7,9 +7,14 @@ var checkboxSide = document.querySelector("#dish1")
 var checkboxMain = document.querySelector("#dish2")
 var checkboxDessert = document.querySelector("#dish3")
 
+var imgSvg = document.querySelector(".svg-img")
+
 var currentMeal
 
-buttonLetsCook.addEventListener("click", randomizeSelectedDish);
+buttonLetsCook.addEventListener("click", function() {
+  imgSvg.classList += " fade-out-image"
+  setTimeout(randomizeSelectedDish, 250)
+});
 
 checkboxSide.addEventListener("click", function(){
   selectOnlyThis(checkboxSide)
@@ -46,7 +51,7 @@ function randomizeSelectedDish(){
     return
   }
 
-  sectionDisplayMeal.innerHTML = `<h2>${currentMeal}</h2>`
+  sectionDisplayMeal.innerHTML = `<h2 class="fade-in-text">${currentMeal}</h2>`
 }
 
 function displayMeal() {
