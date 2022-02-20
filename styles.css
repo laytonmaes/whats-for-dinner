@@ -10,7 +10,8 @@ red - #ee5253
 */
 body{
   background-image: url(./assets/burger-friends.jpg);
-  background-size: 100%;
+  background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -41,8 +42,8 @@ header{
 }
 
 .box{
-  width: 35%;
-  height: 80%;
+  width: 450px;
+  height: 300px;
   display:flex;
   justify-content: center;
   align-items: center;
@@ -52,9 +53,9 @@ header{
 .empty-box{
   height: 20%;
 }
-
 .box-formatting-1 {
   display: flex;
+  margin-left: 15%;
   flex-direction: column;
   justify-content: space-evenly;
   width: 400px;
@@ -63,7 +64,6 @@ header{
 
 ul{
   list-style-type: none;
-  align-items: ;
   margin-top: -5%;
   margin-left: -10%;
 }
@@ -84,6 +84,29 @@ button:hover {
   color: #000000;
 }
 
+@media all and (max-width: 900px){
+  .empty-box {
+    height: 10%;
+  }
+  .wrapper{
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+    height: 80%
+  }
+
+  .box {
+    height: 250px;
+  }
+
+  .empty-box-mobile {
+    height: 5%
+  }
+}
+
+@media (max-width: 500px){
+
+}
 .svg-img{
   width:200;
   height:200;
